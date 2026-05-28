@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+﻿#!/usr/bin/env python
 from __future__ import annotations
 
 import argparse
@@ -91,7 +91,7 @@ def main() -> int:
     args = parser.parse_args()
 
     root = Path(args.project_root).resolve()
-    py = os.environ.get("PYTHON_BIN") or os.environ.get("PY") or "/home/nt612/.conda/envs/ml_core/bin/python"
+    py = os.environ.get("PYTHON_BIN") or os.environ.get("PY") or sys.executable
     if not Path(py).exists():
         py = sys.executable
 
@@ -115,7 +115,7 @@ def main() -> int:
 
     base_env = os.environ.copy()
     base_env["PYTHONPATH"] = f"{root / 'src'}:{base_env.get('PYTHONPATH', '')}"
-    # Each year job controls its own multiprocessing. Keep BLAS at 1 to avoid 32× oversubscription.
+    # Each year job controls its own multiprocessing. Keep BLAS at 1 to avoid 32Ã— oversubscription.
     for k in ["OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS", "NUMEXPR_NUM_THREADS"]:
         base_env[k] = "1"
 

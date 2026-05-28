@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+﻿#!/usr/bin/env python
 from __future__ import annotations
 
 import argparse
@@ -89,7 +89,7 @@ def init_worker() -> None:
     import os
     import sqlalchemy as sa
 
-    user = os.environ.get("WRDS_USERNAME", "nt612")
+    user = os.environ.get("WRDS_USERNAME")
     host = os.environ.get("WRDS_HOST", "wrds-pgdata.wharton.upenn.edu")
     port = os.environ.get("WRDS_PORT", "9737")
     dbname = os.environ.get("WRDS_DBNAME", "wrds")
@@ -441,7 +441,7 @@ def main() -> int:
     print(f"[CUSIPS] {len(cusips):,} eligible CUSIPs loaded from {eligible_path}")
 
     tasks = build_tasks(cusips, args.start_year, args.end_year, args.start_date, args.end_date, args.chunk_size)
-    print(f"[TASKS] {len(tasks):,} year × CUSIP-chunk tasks")
+    print(f"[TASKS] {len(tasks):,} year Ã— CUSIP-chunk tasks")
 
     part_root = interim / f"trace_parts_{tag}"
     part_root.mkdir(parents=True, exist_ok=True)
