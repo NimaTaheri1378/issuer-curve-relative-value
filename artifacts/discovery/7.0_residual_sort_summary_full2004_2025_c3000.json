@@ -1,0 +1,22 @@
+{
+  "input_rows": 2200771,
+  "issuer_month_trades": 182763,
+  "min_bonds_per_issuer_month": 3,
+  "monthly_rows": 256,
+  "performance": {
+    "ann_sharpe": 2.5312584912556746,
+    "cumulative_return": 1.8706560918573802,
+    "max_drawdown": -0.02952823964814788,
+    "max_month": 0.03899910769785379,
+    "mean_monthly": 0.004143640043474571,
+    "min_month": -0.029528239648147856,
+    "n_months": 256,
+    "std_monthly": 0.005670693142061991,
+    "t_stat_mean": 11.691382170519919
+  },
+  "position_rows": 555416,
+  "quantile": 0.2,
+  "run_utc": "2026-05-28T04:21:14.946939+00:00",
+  "tag": "full2004_2025_c3000",
+  "usable_target_rows": 1459247
+}

@@ -1,0 +1,50 @@
+{
+  "run_utc": "2026-05-28T02:26:16.218086+00:00",
+  "tag": "full2004_2025_c3000_2004",
+  "inputs": {
+    "trace_panel": "/cache/home/nt612/Transaction-Based Issuer Yield Curve Relative Value in U.S. Corporate Bonds/artifacts/interim/4.1_trace_daily_agg_full2004_2025_c3000_2004.parquet",
+    "fisd_panel": "artifacts/interim/4.0_fisd_eligible_bonds.parquet"
+  },
+  "trace_rows": 975717,
+  "trace_cusips": 16899,
+  "fisd_rows": 269918,
+  "fisd_cusips": 269917,
+  "fisd_issuers": 11311,
+  "curve_ready_bond_weeks": 375340,
+  "curve_ready_cusips": 16540,
+  "curve_ready_issuers": 2858,
+  "issuer_weeks_total": 94667,
+  "issuer_weeks_min_bonds": 27498,
+  "min_bonds_per_issuer_week": 3,
+  "fitted_curves": 27498,
+  "residual_rows": 291693,
+  "outputs": {
+    "curve_ready_panel": "/cache/home/nt612/Transaction-Based Issuer Yield Curve Relative Value in U.S. Corporate Bonds/artifacts/processed/5.0_curve_ready_panel_full2004_2025_c3000_2004.parquet",
+    "curve_residuals": "/cache/home/nt612/Transaction-Based Issuer Yield Curve Relative Value in U.S. Corporate Bonds/artifacts/processed/5.0_curve_residuals_full2004_2025_c3000_2004.parquet",
+    "issuer_curve_params": "/cache/home/nt612/Transaction-Based Issuer Yield Curve Relative Value in U.S. Corporate Bonds/artifacts/processed/5.0_issuer_curve_params_full2004_2025_c3000_2004.parquet"
+  },
+  "residual_bps_distribution": {
+    "count": 291693.0,
+    "mean": 2.059682747986726,
+    "std": 59.23017309833206,
+    "min": -2399.187013188421,
+    "1%": -158.1550290579627,
+    "5%": -65.6721962359642,
+    "50%": 8.881784197001252e-14,
+    "95%": 69.42773072090657,
+    "99%": 155.00274124216432,
+    "max": 4366.917429300613
+  },
+  "curve_rmse_bps_distribution": {
+    "count": 27498.0,
+    "mean": 17.278894498964508,
+    "std": 40.058217596628545,
+    "min": 0.0,
+    "1%": 2.4087125748817756e-14,
+    "5%": 5.647488318038211e-14,
+    "50%": 6.011266911481023,
+    "95%": 71.1813249434206,
+    "99%": 134.6903020456892,
+    "max": 1259.7780030879776
+  }
+}

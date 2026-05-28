@@ -1,0 +1,50 @@
+{
+  "run_utc": "2026-05-28T03:34:10.576150+00:00",
+  "tag": "full2004_2025_c3000_2020",
+  "inputs": {
+    "trace_panel": "/cache/home/nt612/Transaction-Based Issuer Yield Curve Relative Value in U.S. Corporate Bonds/artifacts/interim/4.1_trace_daily_agg_full2004_2025_c3000_2020.parquet",
+    "fisd_panel": "artifacts/interim/4.0_fisd_eligible_bonds.parquet"
+  },
+  "trace_rows": 1608561,
+  "trace_cusips": 14505,
+  "fisd_rows": 269918,
+  "fisd_cusips": 269917,
+  "fisd_issuers": 11311,
+  "curve_ready_bond_weeks": 465803,
+  "curve_ready_cusips": 14178,
+  "curve_ready_issuers": 1953,
+  "issuer_weeks_total": 84688,
+  "issuer_weeks_min_bonds": 43384,
+  "min_bonds_per_issuer_week": 3,
+  "fitted_curves": 43384,
+  "residual_rows": 411387,
+  "outputs": {
+    "curve_ready_panel": "/cache/home/nt612/Transaction-Based Issuer Yield Curve Relative Value in U.S. Corporate Bonds/artifacts/processed/5.0_curve_ready_panel_full2004_2025_c3000_2020.parquet",
+    "curve_residuals": "/cache/home/nt612/Transaction-Based Issuer Yield Curve Relative Value in U.S. Corporate Bonds/artifacts/processed/5.0_curve_residuals_full2004_2025_c3000_2020.parquet",
+    "issuer_curve_params": "/cache/home/nt612/Transaction-Based Issuer Yield Curve Relative Value in U.S. Corporate Bonds/artifacts/processed/5.0_issuer_curve_params_full2004_2025_c3000_2020.parquet"
+  },
+  "residual_bps_distribution": {
+    "count": 411387.0,
+    "mean": 1.700893992986678,
+    "std": 47.14931351017701,
+    "min": -2805.6778057023325,
+    "1%": -94.15573967440082,
+    "5%": -35.51166873549377,
+    "50%": 0.0,
+    "95%": 44.16157901432267,
+    "99%": 115.29740722638414,
+    "max": 4086.442093218837
+  },
+  "curve_rmse_bps_distribution": {
+    "count": 43384.0,
+    "mean": 14.976210564745905,
+    "std": 35.32701880384688,
+    "min": 0.0,
+    "1%": 1.71384619870725e-14,
+    "5%": 4.440892098500626e-14,
+    "50%": 7.437606817906887,
+    "95%": 49.84175297077613,
+    "99%": 121.84398056125876,
+    "max": 1436.1887762830836
+  }
+}

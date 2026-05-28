@@ -1,0 +1,50 @@
+{
+  "run_utc": "2026-05-28T02:42:02.691135+00:00",
+  "tag": "full2004_2025_c3000_2009",
+  "inputs": {
+    "trace_panel": "/cache/home/nt612/Transaction-Based Issuer Yield Curve Relative Value in U.S. Corporate Bonds/artifacts/interim/4.1_trace_daily_agg_full2004_2025_c3000_2009.parquet",
+    "fisd_panel": "artifacts/interim/4.0_fisd_eligible_bonds.parquet"
+  },
+  "trace_rows": 1026685,
+  "trace_cusips": 15083,
+  "fisd_rows": 269918,
+  "fisd_cusips": 269917,
+  "fisd_issuers": 11311,
+  "curve_ready_bond_weeks": 355396,
+  "curve_ready_cusips": 14646,
+  "curve_ready_issuers": 2197,
+  "issuer_weeks_total": 81623,
+  "issuer_weeks_min_bonds": 28537,
+  "min_bonds_per_issuer_week": 3,
+  "fitted_curves": 28537,
+  "residual_rows": 286895,
+  "outputs": {
+    "curve_ready_panel": "/cache/home/nt612/Transaction-Based Issuer Yield Curve Relative Value in U.S. Corporate Bonds/artifacts/processed/5.0_curve_ready_panel_full2004_2025_c3000_2009.parquet",
+    "curve_residuals": "/cache/home/nt612/Transaction-Based Issuer Yield Curve Relative Value in U.S. Corporate Bonds/artifacts/processed/5.0_curve_residuals_full2004_2025_c3000_2009.parquet",
+    "issuer_curve_params": "/cache/home/nt612/Transaction-Based Issuer Yield Curve Relative Value in U.S. Corporate Bonds/artifacts/processed/5.0_issuer_curve_params_full2004_2025_c3000_2009.parquet"
+  },
+  "residual_bps_distribution": {
+    "count": 286895.0,
+    "mean": 6.5117354901643605,
+    "std": 140.13947477448002,
+    "min": -3046.0526090971944,
+    "1%": -376.31969048397025,
+    "5%": -108.5142506476154,
+    "50%": 2.220446049250313e-14,
+    "95%": 138.59427633410067,
+    "99%": 494.8055852644165,
+    "max": 4234.202016189149
+  },
+  "curve_rmse_bps_distribution": {
+    "count": 28537.0,
+    "mean": 28.14296588032849,
+    "std": 66.06779718098062,
+    "min": 0.0,
+    "1%": 3.0587054070533163e-14,
+    "5%": 7.484212599510648e-14,
+    "50%": 10.687201731283906,
+    "95%": 106.24016156392283,
+    "99%": 336.984234858652,
+    "max": 1270.0846606623227
+  }
+}

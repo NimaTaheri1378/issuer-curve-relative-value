@@ -1,0 +1,50 @@
+{
+  "run_utc": "2026-05-28T03:19:23.793067+00:00",
+  "tag": "full2004_2025_c3000_2018",
+  "inputs": {
+    "trace_panel": "/cache/home/nt612/Transaction-Based Issuer Yield Curve Relative Value in U.S. Corporate Bonds/artifacts/interim/4.1_trace_daily_agg_full2004_2025_c3000_2018.parquet",
+    "fisd_panel": "artifacts/interim/4.0_fisd_eligible_bonds.parquet"
+  },
+  "trace_rows": 1494574,
+  "trace_cusips": 13585,
+  "fisd_rows": 269918,
+  "fisd_cusips": 269917,
+  "fisd_issuers": 11311,
+  "curve_ready_bond_weeks": 440033,
+  "curve_ready_cusips": 13274,
+  "curve_ready_issuers": 2038,
+  "issuer_weeks_total": 87643,
+  "issuer_weeks_min_bonds": 42117,
+  "min_bonds_per_issuer_week": 3,
+  "fitted_curves": 42117,
+  "residual_rows": 379846,
+  "outputs": {
+    "curve_ready_panel": "/cache/home/nt612/Transaction-Based Issuer Yield Curve Relative Value in U.S. Corporate Bonds/artifacts/processed/5.0_curve_ready_panel_full2004_2025_c3000_2018.parquet",
+    "curve_residuals": "/cache/home/nt612/Transaction-Based Issuer Yield Curve Relative Value in U.S. Corporate Bonds/artifacts/processed/5.0_curve_residuals_full2004_2025_c3000_2018.parquet",
+    "issuer_curve_params": "/cache/home/nt612/Transaction-Based Issuer Yield Curve Relative Value in U.S. Corporate Bonds/artifacts/processed/5.0_issuer_curve_params_full2004_2025_c3000_2018.parquet"
+  },
+  "residual_bps_distribution": {
+    "count": 379846.0,
+    "mean": 0.29688980381156715,
+    "std": 34.95028933654203,
+    "min": -1341.2541780659178,
+    "1%": -52.554001631331055,
+    "5%": -19.863484953696798,
+    "50%": 0.0,
+    "95%": 22.555661130245763,
+    "99%": 57.16376602040608,
+    "max": 3373.841284522736
+  },
+  "curve_rmse_bps_distribution": {
+    "count": 42117.0,
+    "mean": 8.85835821138491,
+    "std": 34.152059759651664,
+    "min": 0.0,
+    "1%": 2.4249931534956103e-14,
+    "5%": 5.327513968108189e-14,
+    "50%": 4.506015541550747,
+    "95%": 23.55476977673548,
+    "99%": 74.1638096197437,
+    "max": 1068.6172557410166
+  }
+}

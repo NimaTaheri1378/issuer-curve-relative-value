@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Environments
+.env
+.venv/
+venv/
+.DS_Store
+
+# Credentials
+.pgpass
+*.pgpass
+*.pem
+*.key
+
+# WRDS/local data safety
+artifacts/raw/**
+artifacts/interim/**
+artifacts/processed/**
+!artifacts/raw/.gitkeep
+!artifacts/interim/.gitkeep
+!artifacts/processed/.gitkeep
+logs/**
+*.parquet
+*.tar.gz
+
+# Local backups
+*.bak
+*.bak_*
+*_backup*

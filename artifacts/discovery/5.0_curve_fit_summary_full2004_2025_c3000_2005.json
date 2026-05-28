@@ -1,0 +1,50 @@
+{
+  "run_utc": "2026-05-28T02:27:20.311219+00:00",
+  "tag": "full2004_2025_c3000_2005",
+  "inputs": {
+    "trace_panel": "/cache/home/nt612/Transaction-Based Issuer Yield Curve Relative Value in U.S. Corporate Bonds/artifacts/interim/4.1_trace_daily_agg_full2004_2025_c3000_2005.parquet",
+    "fisd_panel": "artifacts/interim/4.0_fisd_eligible_bonds.parquet"
+  },
+  "trace_rows": 978649,
+  "trace_cusips": 17451,
+  "fisd_rows": 269918,
+  "fisd_cusips": 269917,
+  "fisd_issuers": 11311,
+  "curve_ready_bond_weeks": 376195,
+  "curve_ready_cusips": 17055,
+  "curve_ready_issuers": 2796,
+  "issuer_weeks_total": 92521,
+  "issuer_weeks_min_bonds": 26236,
+  "min_bonds_per_issuer_week": 3,
+  "fitted_curves": 26236,
+  "residual_rows": 293670,
+  "outputs": {
+    "curve_ready_panel": "/cache/home/nt612/Transaction-Based Issuer Yield Curve Relative Value in U.S. Corporate Bonds/artifacts/processed/5.0_curve_ready_panel_full2004_2025_c3000_2005.parquet",
+    "curve_residuals": "/cache/home/nt612/Transaction-Based Issuer Yield Curve Relative Value in U.S. Corporate Bonds/artifacts/processed/5.0_curve_residuals_full2004_2025_c3000_2005.parquet",
+    "issuer_curve_params": "/cache/home/nt612/Transaction-Based Issuer Yield Curve Relative Value in U.S. Corporate Bonds/artifacts/processed/5.0_issuer_curve_params_full2004_2025_c3000_2005.parquet"
+  },
+  "residual_bps_distribution": {
+    "count": 293670.0,
+    "mean": 2.05315078886967,
+    "std": 49.288430174732625,
+    "min": -2291.413838412454,
+    "1%": -128.98519476472322,
+    "5%": -52.314404080490526,
+    "50%": 0.0,
+    "95%": 60.90549443224735,
+    "99%": 141.94024606552694,
+    "max": 3056.5356907135124
+  },
+  "curve_rmse_bps_distribution": {
+    "count": 26236.0,
+    "mean": 12.937787406196872,
+    "std": 29.026043264172696,
+    "min": 0.0,
+    "1%": 0.0,
+    "5%": 5.2879557795974375e-14,
+    "50%": 4.915299849458303,
+    "95%": 52.371678453325934,
+    "99%": 109.73952129280299,
+    "max": 1695.8090325475905
+  }
+}

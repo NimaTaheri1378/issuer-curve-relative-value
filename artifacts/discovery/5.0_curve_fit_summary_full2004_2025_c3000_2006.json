@@ -1,0 +1,50 @@
+{
+  "run_utc": "2026-05-28T02:26:34.691386+00:00",
+  "tag": "full2004_2025_c3000_2006",
+  "inputs": {
+    "trace_panel": "/cache/home/nt612/Transaction-Based Issuer Yield Curve Relative Value in U.S. Corporate Bonds/artifacts/interim/4.1_trace_daily_agg_full2004_2025_c3000_2006.parquet",
+    "fisd_panel": "artifacts/interim/4.0_fisd_eligible_bonds.parquet"
+  },
+  "trace_rows": 974514,
+  "trace_cusips": 17348,
+  "fisd_rows": 269918,
+  "fisd_cusips": 269917,
+  "fisd_issuers": 11311,
+  "curve_ready_bond_weeks": 380704,
+  "curve_ready_cusips": 16926,
+  "curve_ready_issuers": 2715,
+  "issuer_weeks_total": 93220,
+  "issuer_weeks_min_bonds": 26591,
+  "min_bonds_per_issuer_week": 3,
+  "fitted_curves": 26591,
+  "residual_rows": 296799,
+  "outputs": {
+    "curve_ready_panel": "/cache/home/nt612/Transaction-Based Issuer Yield Curve Relative Value in U.S. Corporate Bonds/artifacts/processed/5.0_curve_ready_panel_full2004_2025_c3000_2006.parquet",
+    "curve_residuals": "/cache/home/nt612/Transaction-Based Issuer Yield Curve Relative Value in U.S. Corporate Bonds/artifacts/processed/5.0_curve_residuals_full2004_2025_c3000_2006.parquet",
+    "issuer_curve_params": "/cache/home/nt612/Transaction-Based Issuer Yield Curve Relative Value in U.S. Corporate Bonds/artifacts/processed/5.0_issuer_curve_params_full2004_2025_c3000_2006.parquet"
+  },
+  "residual_bps_distribution": {
+    "count": 296799.0,
+    "mean": 1.97885960998479,
+    "std": 55.68597816340454,
+    "min": -2653.361569446467,
+    "1%": -120.12121348364501,
+    "5%": -42.13674447208592,
+    "50%": 0.0,
+    "95%": 53.01695224520869,
+    "99%": 125.49597358781037,
+    "max": 4052.8641060660766
+  },
+  "curve_rmse_bps_distribution": {
+    "count": 26591.0,
+    "mean": 12.026537062105692,
+    "std": 36.441042992418524,
+    "min": 0.0,
+    "1%": 0.0,
+    "5%": 5.4519853211908454e-14,
+    "50%": 3.9686640186516438,
+    "95%": 45.570683221319214,
+    "99%": 117.07276001942975,
+    "max": 1483.0951740014991
+  }
+}

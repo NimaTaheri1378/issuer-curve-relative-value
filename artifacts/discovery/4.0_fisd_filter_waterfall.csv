@@ -1,0 +1,13 @@
+screen,status,rows_before,rows_after,rows_removed,pct_removed
+raw_fisd_issue,START,710098,710098,0,0.0
+complete_cusip present,APPLIED,710098,710098,0,0.0
+maturity present,APPLIED,710098,707681,2417,0.3404
+maturity >= 2004-01-01,APPLIED,707681,646990,60691,8.576
+principal_amt or offering_amt > 0,APPLIED,646990,646990,0,0.0
+not explicitly foreign_currency,APPLIED,646990,640971,6019,0.9303
+fixed coupon_type if recognizable,APPLIED,640971,276544,364427,56.8555
+not explicitly convertible,APPLIED,276544,271858,4686,1.6945
+not explicitly putable,APPLIED,271858,271108,750,0.2759
+not explicitly asset_backed,APPLIED,271108,270386,722,0.2663
+not explicitly defaulted,APPLIED,270386,269920,466,0.1723
+not explicitly perpetual,APPLIED,269920,269918,2,0.0007

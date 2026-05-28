@@ -1,0 +1,12 @@
+{
+  "run_utc": "2026-05-27T16:50:45.957550+00:00",
+  "raw_rows": 710098,
+  "eligible_rows": 269918,
+  "eligible_issuers": 11311,
+  "eligible_cusips": 269917,
+  "raw_path": "/cache/home/nt612/Transaction-Based Issuer Yield Curve Relative Value in U.S. Corporate Bonds/artifacts/raw/4.0_fisd_issue_master.parquet",
+  "eligible_path": "/cache/home/nt612/Transaction-Based Issuer Yield Curve Relative Value in U.S. Corporate Bonds/artifacts/interim/4.0_fisd_eligible_bonds.parquet",
+  "waterfall_path": "/cache/home/nt612/Transaction-Based Issuer Yield Curve Relative Value in U.S. Corporate Bonds/artifacts/discovery/4.0_fisd_filter_waterfall.csv",
+  "profiles_path": "/cache/home/nt612/Transaction-Based Issuer Yield Curve Relative Value in U.S. Corporate Bonds/artifacts/discovery/4.0_fisd_value_profiles.csv",
+  "note": "Callable/redeemable bonds retained for v1; optionality exclusion should be robustness after TRACE coverage is known."
+}

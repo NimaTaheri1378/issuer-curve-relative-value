@@ -1,0 +1,50 @@
+{
+  "run_utc": "2026-05-27T20:05:57.106033+00:00",
+  "tag": "full2024",
+  "inputs": {
+    "trace_panel": "artifacts/interim/4.1_trace_daily_agg_full2024.parquet",
+    "fisd_panel": "artifacts/interim/4.0_fisd_eligible_bonds.parquet"
+  },
+  "trace_rows": 2033440,
+  "trace_cusips": 17472,
+  "fisd_rows": 269918,
+  "fisd_cusips": 269917,
+  "fisd_issuers": 11311,
+  "curve_ready_bond_weeks": 536640,
+  "curve_ready_cusips": 17068,
+  "curve_ready_issuers": 1775,
+  "issuer_weeks_total": 81696,
+  "issuer_weeks_min_bonds": 43679,
+  "min_bonds_per_issuer_week": 3,
+  "fitted_curves": 43679,
+  "residual_rows": 485936,
+  "outputs": {
+    "curve_ready_panel": "/cache/home/nt612/Transaction-Based Issuer Yield Curve Relative Value in U.S. Corporate Bonds/artifacts/processed/5.0_curve_ready_panel_full2024.parquet",
+    "curve_residuals": "/cache/home/nt612/Transaction-Based Issuer Yield Curve Relative Value in U.S. Corporate Bonds/artifacts/processed/5.0_curve_residuals_full2024.parquet",
+    "issuer_curve_params": "/cache/home/nt612/Transaction-Based Issuer Yield Curve Relative Value in U.S. Corporate Bonds/artifacts/processed/5.0_issuer_curve_params_full2024.parquet"
+  },
+  "residual_bps_distribution": {
+    "count": 485936.0,
+    "mean": 0.8657007169868819,
+    "std": 37.09545280222768,
+    "min": -1050.9748465270707,
+    "1%": -64.34502916219947,
+    "5%": -20.276816034289126,
+    "50%": 0.0,
+    "95%": 25.738425294744594,
+    "99%": 78.1936372672248,
+    "max": 4058.7332071098404
+  },
+  "curve_rmse_bps_distribution": {
+    "count": 43679.0,
+    "mean": 7.859620307878952,
+    "std": 21.05270939689652,
+    "min": 0.0,
+    "1%": 0.0,
+    "5%": 7.043302741649451e-14,
+    "50%": 4.6019101642144475,
+    "95%": 23.709960484584748,
+    "99%": 70.93134108593888,
+    "max": 779.6983649523803
+  }
+}

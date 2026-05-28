@@ -1,0 +1,50 @@
+{
+  "run_utc": "2026-05-28T03:14:09.545311+00:00",
+  "tag": "full2004_2025_c3000_2016",
+  "inputs": {
+    "trace_panel": "/cache/home/nt612/Transaction-Based Issuer Yield Curve Relative Value in U.S. Corporate Bonds/artifacts/interim/4.1_trace_daily_agg_full2004_2025_c3000_2016.parquet",
+    "fisd_panel": "artifacts/interim/4.0_fisd_eligible_bonds.parquet"
+  },
+  "trace_rows": 1364965,
+  "trace_cusips": 13266,
+  "fisd_rows": 269918,
+  "fisd_cusips": 269917,
+  "fisd_issuers": 11311,
+  "curve_ready_bond_weeks": 413772,
+  "curve_ready_cusips": 12947,
+  "curve_ready_issuers": 2118,
+  "issuer_weeks_total": 89082,
+  "issuer_weeks_min_bonds": 39531,
+  "min_bonds_per_issuer_week": 3,
+  "fitted_curves": 39531,
+  "residual_rows": 348698,
+  "outputs": {
+    "curve_ready_panel": "/cache/home/nt612/Transaction-Based Issuer Yield Curve Relative Value in U.S. Corporate Bonds/artifacts/processed/5.0_curve_ready_panel_full2004_2025_c3000_2016.parquet",
+    "curve_residuals": "/cache/home/nt612/Transaction-Based Issuer Yield Curve Relative Value in U.S. Corporate Bonds/artifacts/processed/5.0_curve_residuals_full2004_2025_c3000_2016.parquet",
+    "issuer_curve_params": "/cache/home/nt612/Transaction-Based Issuer Yield Curve Relative Value in U.S. Corporate Bonds/artifacts/processed/5.0_issuer_curve_params_full2004_2025_c3000_2016.parquet"
+  },
+  "residual_bps_distribution": {
+    "count": 348698.0,
+    "mean": 0.7330293665099475,
+    "std": 45.772447501527154,
+    "min": -2223.0295994179996,
+    "1%": -95.17455719294732,
+    "5%": -31.551089725836597,
+    "50%": 0.0,
+    "95%": 36.998454643518194,
+    "99%": 95.18946729827375,
+    "max": 3598.4648901541545
+  },
+  "curve_rmse_bps_distribution": {
+    "count": 39531.0,
+    "mean": 13.443186598566855,
+    "std": 33.245365610203194,
+    "min": 0.0,
+    "1%": 2.4964494942014902e-14,
+    "5%": 5.415607450922933e-14,
+    "50%": 6.628146105228813,
+    "95%": 44.71674448589715,
+    "99%": 128.5927756484792,
+    "max": 1134.3068403230056
+  }
+}

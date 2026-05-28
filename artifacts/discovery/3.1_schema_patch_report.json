@@ -1,0 +1,76 @@
+{
+  "run_utc": "2026-05-27T16:30:42.546586+00:00",
+  "input": "artifacts/discovery/3.0_schema_mapping.json",
+  "output": "configs/schema_map.yaml",
+  "patches": {
+    "fisd.coupon": "set to null because 3.0 incorrectly mapped coupon_type as numeric coupon",
+    "fisd.callable_flag": "redeemable",
+    "returns.price": "price_eom",
+    "returns_fallback.excess_return": "ret_exc",
+    "link.cusip": "set to null because fang_link is issuer-CUSIP based"
+  },
+  "columns": {
+    "trace": {
+      "correction_flag": "trd_mod_4",
+      "counterparty_type": "cntra_mp_id",
+      "cusip": "cusip_id",
+      "sale_condition": "sale_cndtn_cd",
+      "side_code": "rpt_side_cd",
+      "trade_date": "trd_exctn_dt",
+      "trade_price": "rptd_pr",
+      "trade_size": "entrd_vol_qt",
+      "trade_status": "trc_st",
+      "trade_time": "trd_exctn_tm",
+      "trade_yield": "yld_pt"
+    },
+    "fisd": {
+      "asset_backed_flag": "asset_backed",
+      "callable_flag": "redeemable",
+      "convertible_flag": "convertible",
+      "coupon": null,
+      "coupon_type": "coupon_type",
+      "currency": "foreign_currency",
+      "cusip": "complete_cusip",
+      "issue_size": "principal_amt",
+      "issuer_id": "issuer_id",
+      "issuer_name": "prospectus_issuer_name",
+      "maturity_date": "maturity",
+      "offering_date": "offering_date",
+      "putable_flag": "putable",
+      "rating": null,
+      "rule144a_flag": "rule_144a",
+      "security_level": "security_level",
+      "perpetual_flag": "perpetual",
+      "defaulted_flag": "defaulted"
+    },
+    "returns": {
+      "bond_return": "ret_eom",
+      "cusip": "cusip",
+      "date": "date",
+      "excess_return": null,
+      "price": "price_eom",
+      "yield": "yield"
+    },
+    "returns_fallback": {
+      "cusip": "cusip",
+      "date": "date",
+      "bond_return": "ret_eom",
+      "excess_return": "ret_exc",
+      "price": "price_eom",
+      "yield": "yield",
+      "duration": "duration",
+      "rating_num": "rating_num",
+      "amount_outstanding": "amount_outstanding"
+    },
+    "link": {
+      "cusip": null,
+      "end_date": null,
+      "gvkey": "gvkey",
+      "issuer_id": "issuer_cusip",
+      "permco": "permco",
+      "permno": "permno",
+      "start_date": null,
+      "issuer_cusip": "issuer_cusip"
+    }
+  }
+}

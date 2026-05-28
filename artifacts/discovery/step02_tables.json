@@ -1,0 +1,344 @@
+{
+  "timestamp": "2026-05-27 16:05:45.467281",
+  "libraries": {
+    "contrib_bond_dickerson": [
+      "dickerson_bonds_daily",
+      "dickerson_bonds_monthly"
+    ],
+    "contrib_bond_firm_link": [
+      "fang_link"
+    ],
+    "contrib_corporate_bond_returns": [
+      "bonds",
+      "firms"
+    ],
+    "fisd": [
+      "fisd_agent",
+      "fisd_amount_outstanding",
+      "fisd_amt_out_hist",
+      "fisd_announced_call",
+      "fisd_bankruptcy",
+      "fisd_bankruptcy_agent",
+      "fisd_bondholder_protective",
+      "fisd_call_schedule",
+      "fisd_change_formula",
+      "fisd_change_schedule",
+      "fisd_code",
+      "fisd_contact",
+      "fisd_convertible",
+      "fisd_convertible_addit_terms",
+      "fisd_convertible_history",
+      "fisd_convertible_issuer_history",
+      "fisd_convertible_soft_call_sched",
+      "fisd_coupon_formulaindex",
+      "fisd_coupon_info",
+      "fisd_exchange_listing",
+      "fisd_foreign_currency",
+      "fisd_ipo_clawback",
+      "fisd_issue",
+      "fisd_issue_affected",
+      "fisd_issue_agents",
+      "fisd_issue_default",
+      "fisd_issue_enhancement",
+      "fisd_issue_exchange",
+      "fisd_issuer",
+      "fisd_issuer_cusip"
+    ],
+    "fisd_common": [
+      "issue_issuer"
+    ],
+    "fisd_fisd": [
+      "fisd_agent",
+      "fisd_amount_outstanding",
+      "fisd_amt_out_hist",
+      "fisd_announced_call",
+      "fisd_bankruptcy",
+      "fisd_bankruptcy_agent",
+      "fisd_bondholder_protective",
+      "fisd_call_schedule",
+      "fisd_change_formula",
+      "fisd_change_schedule",
+      "fisd_code",
+      "fisd_contact",
+      "fisd_convertible",
+      "fisd_convertible_addit_terms",
+      "fisd_convertible_history",
+      "fisd_convertible_issuer_history",
+      "fisd_convertible_soft_call_sched",
+      "fisd_coupon_formulaindex",
+      "fisd_coupon_info",
+      "fisd_exchange_listing",
+      "fisd_foreign_currency",
+      "fisd_ipo_clawback",
+      "fisd_issue",
+      "fisd_issue_affected",
+      "fisd_issue_agents",
+      "fisd_issue_default",
+      "fisd_issue_enhancement",
+      "fisd_issue_exchange",
+      "fisd_issuer",
+      "fisd_issuer_cusip"
+    ],
+    "fisdsamp": [
+      "fisd_issue_samp",
+      "fisd_issuer_samp",
+      "fisd_mergedissue_samp",
+      "fisd_mergedissuer_samp",
+      "fisd_mergedredemption_samp",
+      "fisd_ratings_samp",
+      "fisd_tsales_samp",
+      "issue_issuer_samp",
+      "naic_bond_transactions_samp"
+    ],
+    "fisdsamp_all": [
+      "fisd_issue_samp",
+      "fisd_issuer_samp",
+      "fisd_mergedissue_samp",
+      "fisd_mergedissuer_samp",
+      "fisd_mergedredemption_samp",
+      "fisd_ratings_samp",
+      "fisd_tsales_samp",
+      "issue_issuer_samp",
+      "naic_bond_transactions_samp"
+    ],
+    "trace": [
+      "absmasterfile",
+      "camasterfile",
+      "cmomasterfile",
+      "mbsmasterfile",
+      "tbamasterfile",
+      "trace",
+      "trace_agency",
+      "trace_agency_enhanced",
+      "trace_btds144a",
+      "trace_btds144a_enhanced",
+      "trace_enhanced",
+      "trace_spds144a_abs",
+      "trace_spds144a_abs_enhanced",
+      "trace_spds144a_cmo",
+      "trace_spds144a_cmo_enhanced",
+      "trace_spds_abs",
+      "trace_spds_abs_enhanced",
+      "trace_spds_cmo",
+      "trace_spds_cmo_enhanced",
+      "trace_spds_mbs",
+      "trace_spds_mbs_enhanced",
+      "trace_spds_tba",
+      "trace_spds_tba_enhanced",
+      "trade_summary",
+      "trade_summary_agency",
+      "trade_summary_btds144a",
+      "trade_summary_spds144a_abs",
+      "trade_summary_spds144a_cmo",
+      "trade_summary_spds_abs",
+      "trade_summary_spds_cmo"
+    ],
+    "trace_enhanced": [
+      "absmasterfile",
+      "camasterfile",
+      "cmomasterfile",
+      "mbsmasterfile",
+      "tbamasterfile",
+      "trace_agency_enhanced",
+      "trace_btds144a_enhanced",
+      "trace_enhanced",
+      "trace_spds144a_abs_enhanced",
+      "trace_spds144a_cmo_enhanced",
+      "trace_spds_abs_enhanced",
+      "trace_spds_cmo_enhanced",
+      "trace_spds_mbs_enhanced",
+      "trace_spds_tba_enhanced"
+    ],
+    "trace_standard": [
+      "absmasterfile",
+      "camasterfile",
+      "cmomasterfile",
+      "mbsmasterfile",
+      "tbamasterfile",
+      "trace",
+      "trace_agency",
+      "trace_btds144a",
+      "trace_spds144a_abs",
+      "trace_spds144a_cmo",
+      "trace_spds_abs",
+      "trace_spds_cmo",
+      "trace_spds_mbs",
+      "trace_spds_tba",
+      "trade_summary",
+      "trade_summary_agency",
+      "trade_summary_btds144a",
+      "trade_summary_spds144a_abs",
+      "trade_summary_spds144a_cmo",
+      "trade_summary_spds_abs",
+      "trade_summary_spds_cmo",
+      "trade_summary_spds_mbs",
+      "trade_summary_spds_tba"
+    ],
+    "wrdsapps": [
+      "_eq_2_bm_",
+      "bdxcrspcomplink",
+      "bdxinslink",
+      "boardex_ciq",
+      "boardex_ciq_link",
+      "boardex_trinsider",
+      "boardex_trinsider_link",
+      "boardex_twoiq",
+      "boardex_twoiq_link",
+      "bondcrsp_link",
+      "bondret",
+      "bondret_std",
+      "chars",
+      "compeushortlink",
+      "country",
+      "crspm",
+      "ds2ws_linktable",
+      "dswslink",
+      "dwcountryreturns",
+      "eushort",
+      "exec_boardex",
+      "exec_boardex_link",
+      "exec_ciq",
+      "exec_ciq_link",
+      "exec_trinsider",
+      "exec_trinsider_link",
+      "exec_twoiq",
+      "exec_twoiq_link",
+      "firm_ratio",
+      "firm_ratio_ccm"
+    ],
+    "wrdsapps_backtest_basic": [
+      "mastertable",
+      "signals_raw_basic"
+    ],
+    "wrdsapps_backtest_plus": [
+      "signals_raw_plus"
+    ],
+    "wrdsapps_bondret": [
+      "bondret",
+      "bondret_std",
+      "trace_enhanced_clean",
+      "trace_standard_clean"
+    ],
+    "wrdsapps_eushort": [
+      "eushort"
+    ],
+    "wrdsapps_evtstudy_int": [
+      "intl_market_values",
+      "intl_security_returns"
+    ],
+    "wrdsapps_evtstudy_lr": [
+      "_eq_2_bm_",
+      "crspm"
+    ],
+    "wrdsapps_evtstudy_us": [
+      "usa_market_values",
+      "usa_security_returns"
+    ],
+    "wrdsapps_finratio": [
+      "firm_ratio",
+      "id"
+    ],
+    "wrdsapps_finratio_ccm": [
+      "firm_ratio_ccm",
+      "id_ccm"
+    ],
+    "wrdsapps_finratio_ibes": [
+      "firm_ratio_ibes",
+      "id_ibes"
+    ],
+    "wrdsapps_finratio_ibes_ccm": [
+      "firm_ratio_ibes_ccm",
+      "id_ibes_ccm"
+    ],
+    "wrdsapps_link_comp_eushort": [
+      "compeushortlink"
+    ],
+    "wrdsapps_link_crsp_bond": [
+      "bondcrsp_link"
+    ],
+    "wrdsapps_link_crsp_comp_bdx": [
+      "bdxcrspcomplink"
+    ],
+    "wrdsapps_link_crsp_factset": [
+      "fscrsplink"
+    ],
+    "wrdsapps_link_crsp_ibes": [
+      "ibcrsphist"
+    ],
+    "wrdsapps_link_crsp_optionm": [
+      "opcrsphist"
+    ],
+    "wrdsapps_link_crsp_taq": [
+      "tclink"
+    ],
+    "wrdsapps_link_crsp_taqm": [
+      "taqmclink",
+      "taqmclink_cusip_2010"
+    ],
+    "wrdsapps_link_datastream_wscope": [
+      "ds2ws_linktable"
+    ],
+    "wrdsapps_link_dealscan_wscope": [
+      "dswslink"
+    ],
+    "wrdsapps_link_supplychain": [
+      "seed_20180418",
+      "seglink"
+    ],
+    "wrdsapps_link_trinsider_bdx": [
+      "bdxinslink"
+    ],
+    "wrdsapps_patents": [
+      "uspatents_citations",
+      "uspatents_gvkey_linking",
+      "uspatents_meta"
+    ],
+    "wrdsapps_plink_boardex_ciq": [
+      "boardex_ciq",
+      "boardex_ciq_link"
+    ],
+    "wrdsapps_plink_boardex_trinsider": [
+      "boardex_trinsider",
+      "boardex_trinsider_link"
+    ],
+    "wrdsapps_plink_exec_boardex": [
+      "exec_boardex",
+      "exec_boardex_link"
+    ],
+    "wrdsapps_plink_exec_ciq": [
+      "exec_ciq",
+      "exec_ciq_link"
+    ],
+    "wrdsapps_plink_exec_trinsider": [
+      "exec_trinsider",
+      "exec_trinsider_link"
+    ],
+    "wrdsapps_plink_trinsider_ciq": [
+      "trinsider_ciq",
+      "trinsider_ciq_link"
+    ],
+    "wrdsapps_subsidiary": [
+      "chars",
+      "wrds_relationships"
+    ],
+    "wrdsapps_windices": [
+      "dwcountryreturns",
+      "mwcountryreturns",
+      "wcountryconstituents"
+    ],
+    "wrdsappssamp_all": [
+      "ccmxpf_lnkhist",
+      "ciqkeydev",
+      "ciqkeydevint",
+      "country",
+      "dsedelist",
+      "dsf",
+      "dsi",
+      "g_secd",
+      "g_security",
+      "series_data",
+      "wrds_keydev",
+      "wrds_keydevint"
+    ]
+  }
+}
