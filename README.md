@@ -1,14 +1,8 @@
-# Transaction-Based Issuer Yield Curve Relative Value in U.S. Corporate Bonds
+﻿# Transaction-Based Issuer Yield Curve Relative Value in U.S. Corporate Bonds
 
 This repository builds a transaction-based fixed-income relative-value research pipeline for U.S. corporate bonds.
 
-The core idea is simple:
-
-> Within the same issuer, bonds that trade cheap relative to an issuer-specific TRACE-implied yield curve should subsequently outperform bonds that trade rich.
-
-The project combines TRACE Enhanced transaction data, FISD bond issue metadata, WRDS Bond Returns, issuer-level Nelson-Siegel curve fitting, issuer-demeaned return targets, long-cheap / short-rich portfolio construction, and placebo validation.
-
----
+The core idea is simple: within the same issuer, bonds that trade cheap relative to an issuer-specific TRACE-implied yield curve should subsequently outperform bonds that trade rich.
 
 ## Headline result
 
@@ -29,8 +23,6 @@ Sample tag: `full2004_2025_c3000`
 | Look-ahead violations | 0 |
 | Duplicate CUSIP-feature-month rows | 0 |
 | Placebo p-value | 0.001996 |
-
----
 
 ## Key figures
 
@@ -54,13 +46,9 @@ Sample tag: `full2004_2025_c3000`
 
 ![FISD universe construction](reports/figures/4.0_fisd_waterfall.png)
 
----
-
 ## Research question
 
 When two bonds belong to the same issuer, does the bond that trades cheap relative to the issuer's transaction-implied yield curve subsequently outperform the issuer's other bonds?
-
----
 
 ## Method
 
@@ -73,13 +61,32 @@ When two bonds belong to the same issuer, does the bond that trades cheap relati
 7. Run a same-issuer long-cheap / short-rich residual-sort baseline.
 8. Validate with no-look-ahead checks, robustness variants, winsorization, and placebo permutations.
 
----
-
 ## Main outputs
 
-```text
+``text
 reports/final_results_full2004_2025_c3000.md
 reports/tables/headline_results_full2004_2025_c3000.csv
 reports/tables/monthly_strategy_returns_full2004_2025_c3000.csv
 reports/tables/robustness_variants_full2004_2025_c3000.csv
 artifacts/discovery/7.1_validation_report_full2004_2025_c3000.md
+``
+
+## Data safety and reproducibility
+
+Raw and derived WRDS data are not redistributed.
+
+This repository contains code, configurations, aggregate reports, validation summaries, and figures. Reproducing the full result requires WRDS access to TRACE Enhanced, FISD, and WRDS Bond Returns.
+
+Do not commit:
+
+``text
+artifacts/raw/
+artifacts/interim/
+artifacts/processed/
+*.parquet
+logs/
+*.tar.gz
+.pgpass
+*.pem
+*.key
+``
