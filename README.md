@@ -4,49 +4,49 @@ This repository builds a transaction-based fixed-income relative-value research 
 
 The core idea is simple: within the same issuer, bonds that trade cheap relative to an issuer-specific TRACE-implied yield curve should subsequently outperform bonds that trade rich.
 
-## Headline result
+## Headline Result
 
 Sample tag: `full2004_2025_c3000`
 
-| Metric | Value |
-|---|---:|
-| Panel rows | 2,200,771 |
-| Issuer-demeaned target rows | 1,459,247 |
-| Monthly observations | 256 |
-| Issuer-month groups | 182,763 |
-| Position rows | 555,416 |
-| Mean monthly return | 0.414% |
-| Annualized Sharpe | 2.53 |
-| t-stat | 11.69 |
-| Cumulative return | 187.1% |
-| Max drawdown | -2.95% |
-| Look-ahead violations | 0 |
-| Duplicate CUSIP-feature-month rows | 0 |
-| Placebo p-value | 0.001996 |
+| Metric                             |     Value |
+| ---------------------------------- | --------: |
+| Panel rows                         | 2,200,771 |
+| Issuer-demeaned target rows        | 1,459,247 |
+| Monthly observations               |       256 |
+| Issuer-month groups                |   182,763 |
+| Position rows                      |   555,416 |
+| Mean monthly return                |    0.414% |
+| Annualized Sharpe                  |      2.53 |
+| t-stat                             |     11.69 |
+| Cumulative return                  |    187.1% |
+| Max drawdown                       |    -2.95% |
+| Look-ahead violations              |         0 |
+| Duplicate CUSIP-feature-month rows |         0 |
+| Placebo p-value                    |  0.001996 |
 
-## Key figures
+## Key Figures
 
-### Cumulative residual-sort performance
+### Cumulative Residual-Sort Performance
 
 ![Cumulative residual-sort performance](reports/figures/7.0_residual_sort_cumulative_full2004_2025_c3000.png)
 
-### Placebo validation
+### Placebo Validation
 
 ![Placebo validation](reports/figures/7.1_placebo_distribution_full2004_2025_c3000.png)
 
-### Robustness variants
+### Robustness Variants
 
 ![Robustness variants](reports/figures/7.1_robustness_variants_full2004_2025_c3000.png)
 
-### Signal monotonicity
+### Signal Monotonicity
 
 ![Signal monotonicity](reports/figures/6.0_signal_monotonicity_full2004_2025_c3000.png)
 
-### FISD universe construction
+### FISD Universe Construction
 
 ![FISD universe construction](reports/figures/4.0_fisd_waterfall.png)
 
-## Research question
+## Research Question
 
 When two bonds belong to the same issuer, does the bond that trades cheap relative to the issuer's transaction-implied yield curve subsequently outperform the issuer's other bonds?
 
@@ -61,17 +61,29 @@ When two bonds belong to the same issuer, does the bond that trades cheap relati
 7. Run a same-issuer long-cheap / short-rich residual-sort baseline.
 8. Validate with no-look-ahead checks, robustness variants, winsorization, and placebo permutations.
 
-## Main outputs
+## Repository Structure
 
-``text
+```text
+configs/                 Schema and project configuration
+scripts/                 Ordered pipeline scripts
+reports/                 Final result tables and figures
+artifacts/discovery/     Safe aggregate audit summaries
+artifacts/raw/           Local WRDS-derived data; not committed
+artifacts/interim/       Local WRDS-derived data; not committed
+artifacts/processed/     Local WRDS-derived data; not committed
+```
+
+## Main Outputs
+
+```text
 reports/final_results_full2004_2025_c3000.md
 reports/tables/headline_results_full2004_2025_c3000.csv
 reports/tables/monthly_strategy_returns_full2004_2025_c3000.csv
 reports/tables/robustness_variants_full2004_2025_c3000.csv
 artifacts/discovery/7.1_validation_report_full2004_2025_c3000.md
-``
+```
 
-## Data safety and reproducibility
+## Data Safety and Reproducibility
 
 Raw and derived WRDS data are not redistributed.
 
@@ -79,7 +91,7 @@ This repository contains code, configurations, aggregate reports, validation sum
 
 Do not commit:
 
-``text
+```text
 artifacts/raw/
 artifacts/interim/
 artifacts/processed/
@@ -89,4 +101,8 @@ logs/
 .pgpass
 *.pem
 *.key
-``
+```
+
+## Notes
+
+This repository is designed as a research and reproducibility scaffold, not as a redistribution of licensed data. The public files include source code, configuration files, figures, and aggregate result summaries. Licensed WRDS-derived datasets remain local and are excluded through `.gitignore`.
